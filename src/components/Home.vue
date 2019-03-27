@@ -104,6 +104,11 @@
         min-height: 400px;
     }
 
+    .el-submenu,
+    .el-menu-item{
+        font-size: 16px;
+    }
+
     .nav-switch {
         padding: 18px 12px;
     }
