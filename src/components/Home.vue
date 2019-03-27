@@ -18,7 +18,7 @@
                     <template v-for="(item,index) in $router.options.routes" :key="">
                         <el-submenu v-if="!item.leaf" :index="index+''">
                             <template slot="title">
-                                <i :class="item.navIcon"></i>
+                               <!-- <i :class="item.navIcon"></i>-->
                                 <span slot="title">{{ item.name }}</span>
                             </template>
                             <el-menu-item v-for="child in item.children" :index="child.path" :key="child.path">
@@ -26,7 +26,7 @@
                             </el-menu-item>
                         </el-submenu>
                         <el-menu-item v-if="item.leaf" :index="item.children[0].path">
-                            <i :class="item.navIcon"></i>
+                            <!--<i :class="item.navIcon"></i>-->
                             <span slot="title">{{ item.name }}</span>
                         </el-menu-item>
                     </template>
