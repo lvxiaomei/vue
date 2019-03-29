@@ -13,6 +13,9 @@ Vue.config.productionTip = false;
 
 Vue.use(ElementUI, {locale});
 
+//引入vue-resource
+require("vue-resource");
+
 /* eslint-disable no-new */
 new Vue({
     el: '#app',

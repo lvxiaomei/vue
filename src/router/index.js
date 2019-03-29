@@ -4,9 +4,9 @@ import Home from '@/components/Home'
 import Computed from '@/components/vue/Computed'
 import Array from '@/components/vue/Array'
 import Form from '@/components/vue/Form'
-import Vuex from '@/components/vuex'
-import VueResource from '@/components/vue-resource'
-import Pages6 from '@/components/nav4/Pages6'
+import Vuex from '@/components/vuex/Vuex'
+import VueResource from '@/components/vue-resource/VueResource'
+import Mock from '@/components/mock/Mock'
 
 Vue.use(Router);
 
@@ -45,12 +45,12 @@ export default new Router({
         },
         {
             path: '/',
-            name: '导航四',
+            name: 'mock',
             component: Home,
             /*navIcon:'el-icon-setting',*/
             leaf:true,
             children: [
-                {path: '/pages6', name: 'Pages6', component: Pages6},
+                {path: '/mock', name: 'mock', component: Mock},
             ]
         }
     ]

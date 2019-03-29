@@ -30,7 +30,7 @@
 
 <script>
     export default {
-        name: 'Practice',
+        name: 'Form',
         data() {
             return {
                 startCount: '开始计数',
