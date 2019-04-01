@@ -1,6 +1,7 @@
 <template>
     <div>
-        <h4>mockjs模拟数据；axios模拟后台接口</h4>
+        <h4>mockjs模拟数据；axios模拟后台接口。</h4>
+        <h4>先npm安装axios、mockjs，然后创建一个js来mock数据，在这个js里面import mockjs，然后在组件里面引入该js，再引入axios即可使用axios请求接口。</h4>
 
         <el-row>
             <el-button @click="postTest">postTest</el-button>
