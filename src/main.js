@@ -8,13 +8,21 @@ import locale from 'element-ui/lib/locale/lang/en'
 import App from './App'
 import router from './router'
 import store from './vuex/store'
+import VueResource from 'vue-resource'
 
 Vue.config.productionTip = false;
 
 Vue.use(ElementUI, {locale});
+Vue.use(VueResource);
 
-//引入vue-resource
-require("vue-resource");
+//vue-resource 拦截器
+Vue.http.interceptors.push((request, next) => {
+    next((response) => {
+        //在这里可以进行一系列的操作 例如：判断token是否过期
+        console.log(1);
+        return response; //必须返回
+    })
+});
 
 /* eslint-disable no-new */
 new Vue({
